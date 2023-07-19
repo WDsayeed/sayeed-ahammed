@@ -31,9 +31,9 @@ const Portfolio = () => {
     //                 </div>
     //         </div>
     //        </section>
-    <section>
+    <section id="portfolio">
       <h2 className="section-title">Portfolio</h2>
-      <span className="section-subtitle">What i offer</span>
+      <span className="section-subtitle">What i works</span>
       <div className="portfolio-container container">
         <div className="box box-1">
           <a href="https://cooking-master-2f326.web.app/" className="">
