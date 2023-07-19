@@ -1,0 +1,109 @@
+.portfolio-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 5rem;
+}
+.portfolio-container .portfolio-box{
+        position: relative;
+        border-radius: 1rem;
+        box-shadow: 0 0 1rem #fff;
+        overflow: hidden;
+        display: flex;
+}
+.portfolio-box img{
+        width: 100%;
+}
+.portfolio-box .portfolio-layer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, ));
+}
+
+.portfolio-container{
+        display: flex;
+        justify-content: space-between;
+}
+.portfolio-container .box{
+        width: 580px;
+        height: 400px;
+        background-color: #000;
+        background-position: top;
+        transition: ease-in-out 3s;
+}
+.portfolio-container .box.box-1{
+        background: url('../../assets/chef.jpg');
+        background-size: cover;
+        
+        
+}
+.portfolio-container .box.box-2{
+        background: url('../../assets/toy-car.jpg');
+        background-size: cover;
+}
+.portfolio-container .box.box-3{
+        background: url('../../assets/language-course.jpg');
+        background-size: cover;
+}
+
+.portfolio-container .box:hover{
+        background-position: bottom;
+        /* background-color: #000; */
+
+}
+.overlay{
+        border-radius: 15px;
+        box-shadow:  -15px -15px 15px 5px rgba(90, 90, 90),15px 15px 15px 15px rgb(240, 240, 240);
+        border-bottom: none;
+        height: 100%;
+        
+}
+.description{
+        border-radius: 15px;
+        box-shadow:  10px 10px 10px 10px rgb(248, 244, 244),10px 10px 10px  rgb(174, 173, 173);
+        margin-top: 10px;
+        margin-bottom: 50px;
+        padding: 10px;
+        background: #fff;
+        font-size: 15px;
+}
+.flex{
+        display: flex;
+        justify-content: space-between;
+}
+
+@media screen and (max-width: 1240px) {
+        .portfolio-container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                align-items: center;
+                gap: 5rem;
+        }
+       }
+       /* for medium devices */
+       @media screen and (max-width: 768px) {
+        .portfolio-container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                gap: 3rem;
+        }
+       }
+       /* for large devices */
+       @media screen and (max-width: 576px) {
+        
+       }
+       /* for small devices */
+       @media screen and (max-width: 350px) {
+        .portfolio-container{
+                display: grid;
+                grid-template-columns: 1fr;
+                
+        }
+        .box{
+                width: 100%;
+        }
+}
